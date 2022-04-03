@@ -4,7 +4,7 @@ let hours = 0;
 let minutes = 0;
 let seconds = 0;
 let arr;
-cd = true;
+let cd = true;
 
 const sound = new Audio ("sound.mp3");
 
@@ -85,8 +85,8 @@ function countdown() {
 
 			if (seconds <= 0) {
 				minutes --;
-				seconds = 59;
 				sound.play();
+				seconds = 59;
 			}
 			if (minutes <= 0) {
 				hours --;
