@@ -1,0 +1,21 @@
+body {
+	background-color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: white;
+}
+
+h1 {
+	font-size: 3.1rem;
+}
+
+.li {
+	display: flex;
+	align-items: baseline;
+}
+
+.center {
+	display: grid;
+	place-items: center;
+	vertical-align: middle;
+}
+
