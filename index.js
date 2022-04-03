@@ -85,6 +85,7 @@ function countdown() {
 
 			if (seconds <= 0) {
 				minutes --;
+				sound = new Audio ("sound.mp3");
 				sound.play();
 				seconds = 59;
 			}
