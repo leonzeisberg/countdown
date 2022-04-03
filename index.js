@@ -84,9 +84,9 @@ function countdown() {
 			seconds --;
 
 			if (seconds <= 0) {
-				minutes --;
-				sound = new Audio ("sound.mp3");
+				const sound = new Audio ("sound.mp3")
 				sound.play();
+				minutes --;
 				seconds = 59;
 			}
 			if (minutes <= 0) {
@@ -102,7 +102,7 @@ function countdown() {
 				days = 363;
 			}
 			if (seconds + minutes + hours + days + years <= 0) {
-				sound.play()
+				sound.play();
 				cd = false;
 			}
 
