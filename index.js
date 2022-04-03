@@ -13,7 +13,7 @@ function pickDeathDate() {
 		localStorage.setItem("username", prompt("Username: "));
 	}
 
-	if (!localStorage.getItem("Years")) {
+	//if (!localStorage.getItem("Years")) {
 		/*** 
 		localStorage.setItem("Years", String(Math.floor(Math.random() * 5)));
 		localStorage.setItem("Days", String(Math.floor(Math.random() * 99)));
@@ -27,7 +27,7 @@ function pickDeathDate() {
 		localStorage.setItem("Hours", String(12));
 		localStorage.setItem("Minutes", String(49));
 		localStorage.setItem("Seconds", String(56));
-	}
+	//}
 
 	years = parseInt(localStorage.getItem("Years"));
 	days = parseInt(localStorage.getItem("Days"));
