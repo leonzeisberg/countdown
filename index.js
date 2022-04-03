@@ -86,6 +86,7 @@ function countdown() {
 			if (seconds <= 0) {
 				minutes --;
 				seconds = 59;
+				sound.play();
 			}
 			if (minutes <= 0) {
 				hours --;
