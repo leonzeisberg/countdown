@@ -6,7 +6,10 @@ let seconds = 0;
 let arr;
 let cd = true;
 
-const sound = new Audio ("sound.mp3");
+function playSound() {
+	const sound = new Audio ("sound.mp3");
+	sound.play();
+}
 
 function pickDeathDate() {
 	if (!localStorage.getItem("username")) {
@@ -76,6 +79,7 @@ function countdown() {
 			document.getElementById("seconds").textContent = (seconds).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});;
 			if (seconds <= 5) {
 				document.getElementById("seconds").style.color = "red";
+				playSound();
 			}
 			else {
 				document.getElementById("seconds").style.color = "white";
@@ -84,8 +88,6 @@ function countdown() {
 			seconds --;
 
 			if (seconds <= 0) {
-				const sound = new Audio ("sound.mp3")
-				sound.play();
 				minutes --;
 				seconds = 59;
 			}
@@ -102,7 +104,6 @@ function countdown() {
 				days = 363;
 			}
 			if (seconds + minutes + hours + days + years <= 0) {
-				sound.play();
 				cd = false;
 			}
 
